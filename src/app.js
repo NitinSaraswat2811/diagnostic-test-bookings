@@ -13,10 +13,12 @@ const bookingRoutes = require("./routes/bookingRoutes");
 const authRoutes = require("./routes/authRoutes");
 const centreRoutes = require("./routes/centreRoutes");
 const testRoutes = require("./routes/testRoutes");
+const paymentRoutes = require("./routes/paymentRoutes");
 
 app.use("/api/bookings", bookingRoutes);
 app.use("/api/auth",authRoutes);
 app.use("/api/centres",centreRoutes);
 app.use("/api/tests",testRoutes);
+app.use('/api/payments',paymentRoutes);
 
 module.exports = app;
